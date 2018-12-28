@@ -1,0 +1,28 @@
+spring:
+    application:
+        name: pauta-service
+    datasource:
+        url: 'jdbc:mysql://votacao.c0goiutthyz2.us-east-2.rds.amazonaws.com:3306/woop_sicredi'
+        driverClassName: com.mysql.jdbc.Driver
+        password: woopSicredi123
+        username: woopSicredi
+        type: com.zaxxer.hikari.HikariDataSource
+        hikari:
+            maximum-pool-size: 10
+            minimum-idle: 1
+            connection-test-query: 'SELECT 1'
+    jpa:
+        properties:
+            hibernate: {dialect: org.hibernate.dialect.MySQL5InnoDBDialect}
+api:
+    info:
+        title: 'Pauta Service Api'
+        description: 'Pauta Service Api'
+        version: v1
+        termOfService: 'Terms of Service'
+        contact:
+            name: 'Paulo Kieffer'
+            url: null
+            email: paulo.krj@gmail.com
+        license: 'License of Api'
+        licenseUrl: null
